@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Forgot Password</title>
+  <link rel="stylesheet" href="forgot.css">
+</head>
+<body>
+  <div class="forgot-container">
+    <h2>Forgot Password</h2>
+    <p>Enter your email to reset your password</p>
+    <form action="/reset-password" method="POST">
+      <input type="email" name="email" placeholder="qwerty12345@gmail.com"  autocomplete="on" required>
+      <button type="submit">Send Reset Link</button>
+    </form>
+    <a class="back-link" href="signin.html">Back to Login</a>
+  </div>
+</body>
+</html>

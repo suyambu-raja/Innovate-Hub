@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Innovate Hub</title>
+
+
+    <!--poppins for font family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,198;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,198;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!--Font awesome icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!--style sheet-->
+    <link rel="stylesheet" href="styling.css">
+
+
+</head>
+
+<body>
+
+    <div class="profile-navbar-container">
+        <div class="profile-navbar-name">
+            <h2>Innovate Hub</h2>
+        </div>
+        <div class="profile-navbar-buttons">
+            <a href="index.html">
+                <h3>Home</h3>
+            </a>
+            <a href="explore.html">
+                <h3>Explore</h3>
+            </a>
+            <h3 class="up-down-btn">
+                <i class="fa fa-user-circle usingperson"></i>
+                <span class="personName">Guest</span>
+                <i class="fas fa-angle-down" id="show-profile"></i>
+                <i class="fas fa-angle-up" id="hide-profile"></i>
+            </h3>
+        </div>
+    </div>
+
+    <div class="profile-access-items">
+        <h3 style="margin-top:30px;">My Projects</h3>
+        <h3 class="project-share">Share New Project</h3>
+        <h3 class="logoutUser" onclick="logoutUser()">Logout</h3>
+    </div>
+
+    <div>
+        <button class="project-share-btn">+ Share New Project</button>
+    </div>
+
+    <div class="content-page">
+        <i class="fa-solid fa-xmark page-close-btn"></i>
+    </div>
+    <div class="content-holder">
+        <div class="content-container">
+            <div class="name-div"><input class="name-inp" placeholder="Project Name" autocomplete="on"  name="0" required></div>
+            <div class="domain-div"><input class="domain-inp" placeholder="Domain" autocomplete="on"  name="0" required></div>
+            <div class="content-div"><textarea class="content-inp" placeholder="Place your idea"  name="0" required></textarea></div>
+            <div class="choosen-img-container">
+                <label for="choosen-img">Upload image</label>
+                <input type="file" id="choosen-img" accept="image/jpeg,image/jpg,image/png">
+                <img src="#" class="idea-img">
+            </div>
+            <div class="post-btn-container">
+                <button class="post-btn" type="submit" name="0">Create Post</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-content-container-1"></div>
+
+
+</body>
+
+<script src="script.js"> </script>
+
+</html>
